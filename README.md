@@ -48,4 +48,6 @@ for more detailed instructions.  The Heroku instructions included below are abri
       * Run `git commit -m "added Alchemy keys"`
       * Run `git push heroku master` to push and deploy your heroku app.
      
-🎉 Congratulations on your dApp deployment! Feel free to edit your app, change its behavior, or make the frontend more spiffy!
+🎉 Congratulations on your dApp deployment! Feel free to edit this NFT, change its behavior, or make the backend more robust!
+
+NOTE: Heroku will automatically sleep apps after a set period of time so you will need to make sure you app is up and awake for unchain acitivity to be recognized!  
