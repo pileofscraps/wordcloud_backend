@@ -59,6 +59,8 @@ for more detailed instructions.  The Heroku instructions included below are abri
 
     ![webhook_2](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_2.jpg
 
+    * For more info about Alchemy Notify, [check it out] (https://docs.alchemy.com/alchemy/documentation/apis/enhanced-apis/notify-api)!
+
  5. Deploy Heroku.
 
       * Run `git add .`
