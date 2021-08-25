@@ -49,9 +49,15 @@ for more detailed instructions.  The Heroku instructions included below are abri
 
      ![webhook_1](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_1.jpg)
 
-    * Taking note from the information that followed the `heroku create` command, copy and paste in the http://xxxxxxxxx.herokuapp.com/alchemyhook URL into the webhook entry box.  Select an app from the dropdown menu (Make sure the app selected is on the Ethereum network you want to test on; if you're testing on Rinkeby, select an app configured to it!) Click “Create Webhook” and we’re done!
+    * Taking note from the information that followed the `heroku create` command, copy and paste in the http://xxxxxxxxx.herokuapp.com/alchemyhook URL into the webhook entry box.  Select an app from the dropdown menu.  
 
-    ![webhook_2](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_2.jpg)
+    (Make sure the app selected is on the Ethereum network you want to test on; if you're testing on Rinkeby, select an app configured to it!)
+
+    Add in the target address that you want to monitor!  In this example, we log and update our wordcloud with any addresses that send Rinkeby ETH to our address.
+
+    Click “Create Webhook” and we’re done!
+
+    ![webhook_2](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_2.jpg
 
  5. Deploy Heroku.
 
