@@ -3,8 +3,8 @@ Offchain Dynatic NFT Generation
 
 While dApps on Ethereum have grown in complexity, depth, and breadth in the past few years. One missing piece is the efficient querying of blockchain information in real-time.
 
-Users need to know immediately when their trades execute, when their transactions fail, when their auction bid has been accepted, or when a wallet of interest has aped into some new token. Without these notifications, trades can be missed, critical actions are forgotten, and ultimately users end up abandoning your dApp. 
-Unfortunately, building these real-time notifications into your dApp has traditionally been complicated, time-consuming, and error-prone. But now with Alchemy Notify, sending real-time push notifications to your users for critical events such as dropped transactions, mined transactions, wallet activity, and even gas price changes is straightforward, easy, and dependable. 
+Users need to know immediately when their trades execute, when their transactions fail, when their auction bid has been accepted, or when a wallet of interest has aped into some new token. Without these notifications, trades can be missed, critical actions are forgotten, and ultimately users end up abandoning your dApp.
+Unfortunately, building these real-time notifications into your dApp has traditionally been complicated, time-consuming, and error-prone. But now with Alchemy Notify, sending real-time push notifications to your users for critical events such as dropped transactions, mined transactions, wallet activity, and even gas price changes is straightforward, easy, and dependable.
 
 In this tutorial, we’ll look at an example of how, with just a few lines of code, you can build a Dynamic NFT with the 🔋 power of Alchemy Notify.
 
@@ -27,7 +27,7 @@ Note: This serves as an adjunct component to the NFT's minting which takes place
       * `https://github.com/pileofscraps/wordcloud_backend.git`
 
 For all Heroku dependent documentation, refer to:
-https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true 
+https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true
 for more detailed instructions.  The Heroku instructions included below are abridged.
 
  2. Install Heroku-CLI and verify/install dependencies.
@@ -39,15 +39,26 @@ for more detailed instructions.  The Heroku instructions included below are abri
       * Run `git --version`   Check to make sure you have git installed.  
 
  3. Initiate Heroku.
- 
-      * Run `heroku create` to create your heroku app. Take note of the info that pops up in the terminal, especially the URL that looks like  http://xxxxxxxxx.herokuapp.com/ That's the URL for your dashboard!
 
- 4. Deploy Heroku.
+      * Run `heroku create` to create your heroku app. Take note of the info that pops up in the terminal, especially the URL that looks like  http://xxxxxxxxx.herokuapp.com/ That's the URL for your tokenURI and your server!
+
+ 4. Set-Up Alchemy Account!
+
+     * If you don’t already have an Alchemy account, [you’ll first need to create one](https://alchemy.com/?r=affiliate:ba2189be-b27d-4ce9-9d52-78ce131fdc2d). The free version will work fine for getting started.  First, create our example notification by clicking “Create Webhook” on Address Activity.
+
+
+     ![webhook_1](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_1.jpg)
+
+    * Taking note from the information that followed the `heroku create` command, copy and paste in the http://xxxxxxxxx.herokuapp.com/alchemyhook URL into the webhook entry box.  Select an app from the dropdown menu (Make sure the app selected is on the Ethereum network you want to test on; if you're testing on Rinkeby, select an app configured to it!) Click “Create Webhook” and we’re done!
+
+    ![webhook_2](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_2.jpg)
+
+ 5. Deploy Heroku.
 
       * Run `git add .`
       * Run `git commit -m "added Alchemy keys"`
       * Run `git push heroku master` to push and deploy your heroku app.
-     
+
 🎉 Congratulations on your dApp deployment! Feel free to edit this NFT, change its behavior, or make the backend more robust!
 
 NOTE: Heroku will automatically sleep apps after a set period of time so you will need to make sure you app is up and awake for unchain acitivity to be recognized!  
