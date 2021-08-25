@@ -57,7 +57,7 @@ for more detailed instructions.  The Heroku instructions included below are abri
 
     * Click “Create Webhook” and we’re done!
 
-    ![webhook_2](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_2.jpg
+    ![webhook_2](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_2.jpg)
 
     * For more info about Alchemy Notify, [check it out] (https://docs.alchemy.com/alchemy/documentation/apis/enhanced-apis/notify-api)!
 
